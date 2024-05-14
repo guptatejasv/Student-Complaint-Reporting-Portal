@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hod login page</title>
+   <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    
+    }
+    
+    
+    .header{
+        background-color: rgba(252, 254, 254, 0.9);
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 50px;
+        position:static;
+        border-bottom: 5px solid red;
+    }
+    .login_btns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .login_btns a{
+        text-decoration: none;
+        list-style: none;
+       
+    }
+    .login_btns button{
+        padding: 8px 10px;
+        margin-left: 15px;
+        border-radius: 5px;
+        border: none;
+        border-bottom: 2px solid rgb(56, 126, 237);
+        background:none;
+        font-size: large;
+        color: rgb(50, 75, 76);
+    }
+    .login_btns button:hover{
+        background-color:  rgb(56, 126, 237);
+        transition: .5s;
+        border-radius: 10px 0px 10px 0px;
+        color: white;
+    }
+    .login_btns button a:hover{
+        color: white;
+    }
+    
+    .logo_invertis{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo_invertis img{
+        float: left;
+    }
+    .logo_invertis div{
+        float: right;
+    }
+    header .line{
+    height: 55px;
+    width: 2px;
+    border: 1.5px solid rgba(51, 58, 58, 0.9);
+    margin: 0px 10px;
+    }
+    .portal_name{
+      font-size: 1.3em; 
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color:  rgb(23, 133, 176);
+    }
+    .portal_name:hover{
+        color:  rgb(56, 126, 237);
+    }
+    .sub_container{
+       text-align: left;
+       justify-content: left;
+       width: 60%;
+       margin: auto;
+       margin-left: 50px;
+       border-radius: 30px 0 30px 0;
+       border: 2px solid red;
+       padding: 10px;
+      
+       /* background-color: rgb(184, 188, 192); */
+    }
+    
+    .main_heading{
+        font-size: 2.75rem;
+        font-weight: 1000;
+        color: rgb(250, 4, 4);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    
+    
+    }
+    .sub_heading{
+        color: antiquewhite;
+        font-size: 1.25rem;
+        text-align: center;
+    }
+   
+   
+    
+        section{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+        section .imgBx{
+            position: relative;
+            width: 50%;
+            height: 750px;
+            filter: drop-shadow(15px 15px 5px rgb(76, 156, 188));
+            
+        }
+        
+        section .imgBx:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 900px;
+            z-index: 1;
+        }
+        section .imgBx img{
+            position: absolute;
+            top: 0;
+            left: 0;
+           max-width:100%;
+            height: 800px;
+            object-fit: cover;
+            
+        } 
+        
+         
+        section .contentBx{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            heigth: 100%;
+        }
+        section .contentBx .formBx{
+            width: 50%;
+        }
+        section .contentBx .formBx h2{
+            color:black;
+            
+            font-weight: 600;
+            font-size: 2.0em;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            border-bottom: 4px solid rgb(23, 133, 176);;
+            display: inline-block;
+            letter-spacing: 1px;
+            box-shadow :0 3px 12px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);; 
+        }
+        section .contentBx .formBx .inputBx{
+            margin-bottom: 20px;
+        }
+        section .contentBx .formBx .inputBx span{
+            font-size: 16px;
+            margin-bottom: 5px;
+            display: inline-block;
+            color: black;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+        section .contentBx .formBx .inputBx input{
+            width: 100%;
+            padding: 10px 20px;
+            outline: none;
+            font-weight: 400;
+            border: 1px solid  rgb(23, 133, 176);;
+            font-size: 16px;
+            letter-spacing: 1px;
+            color: black;
+            background: transparent;
+            border-radius: 20px;
+            box-shadow :0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);; 
+        }
+        section .contentBx .formBx .inputBx input[type="submit"]{
+            background: rgb(23, 133, 176);;
+            color: #fff;
+            outline: none;
+            border: none;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        section .contentBx .formBx .inputBx input[type="submit"]:hover{
+            background:  rgb(16, 73, 137);
+            box-shadow :0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);; 
+        }
+        
+        @media (max-width: 800px){
+            section .imgBx {
+                position: absolute;
+                width:100%;
+                height:100%;
+                top:0;
+                left: 0;
+                z-index: 999;
+            }
+        
+            section .contentBx{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                min-height: 100%;
+                z-index: 1;
+            }
+            section .contentBx .formBx{
+                width: 100%;
+                padding: 40px;
+                background: rgb(255 255 255 / 0.9);
+                margin: 50px;
+                box-shadow :0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);; 
+            }
+           
+        }
+        
+            
+        
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo_invertis">
+          <img src="ilogo.png" alt="">
+          <div class="line"></div>
+          <div class="portal_name"><h2>Student Complaint Reporting Portal</h2></div>
+        </div>
+        <div class="login_btns">
+          <a href="www.google.com"><button value="Home">Home</button></a>
+          <a href="www.google.com"><button value="Home">User Login</button></a>
+          <a href="www.google.com"><button value="Home">Official Login</button></a>
+    
+        </div>
+       </header>
+        <section>
+            <div class="imgBx">
+                <img src="s1.webp">
+            </div>
+            
+            <div class="contentBx">
+                <div class="formBx">
+                    <h2>DEAN LOGIN</h2>
+                    <form action="login.php" method="POST">
+                        <div class="inputBx">
+                            <span>Username</span>
+                            <input type="text" name="username" required>
+                        </div>
+                        <div class="inputBx">
+                            <span>Password</span>
+                            <input type="password" name="password" required>
+                        </div>
+                        <div class="inputBx">
+                            <input type="submit" value="Login/ Sign In" >
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+            
+        </section>
+        
+        
+         
+</body>
+</html>

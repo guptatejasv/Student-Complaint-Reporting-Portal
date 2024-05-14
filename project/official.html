@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Official Login</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+</head>
+<style>
+    
+    
+    body{
+        background-color: rgb(23, 133, 176);
+    }
+    
+    .header{
+        background-color: rgba(252, 254, 254, 0.9);
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 50px;
+        position:static;
+        border-bottom: 5px solid red;
+    }
+    .login_btns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .login_btns a{
+        text-decoration: none;
+        list-style: none;
+       
+    }
+    .login_btns button{
+        padding: 8px 10px;
+        margin-left: 15px;
+        border-radius: 5px;
+        border: none;
+        border-bottom: 2px solid rgb(56, 126, 237);
+        background:none;
+        font-size: large;
+        color: rgb(50, 75, 76);
+    }
+    .login_btns button:hover{
+        background-color:  rgb(56, 126, 237);
+        transition: .5s;
+        border-radius: 10px 0px 10px 0px;
+        color: white;
+    }
+    .login_btns button a:hover{
+        color: white;
+    }
+    .main_container{
+        background-image:url("ib2.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 82vh;
+        padding-top: 100px;
+        opacity:0.7;
+        font-family: "Lato";
+        color: white;
+        background-position: center; 
+        background-size: cover;
+       
+    }
+    .logo_invertis{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo_invertis img{
+        float: left;
+    }
+    .logo_invertis div{
+        float: right;
+    }
+    header .line{
+    height: 55px;
+    width: 2px;
+    border: 1.5px solid rgba(51, 58, 58, 0.9);
+    margin: 0px 10px;
+    }
+    .portal_name{
+      font-size: 1.3em; 
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color:  rgb(23, 133, 176);
+    }
+    .portal_name:hover{
+        color:  rgb(56, 126, 237);
+    }
+    .sub_container{
+       text-align: left;
+       justify-content: left;
+       width: 60%;
+       margin: auto;
+       margin-left: 50px;
+       border-radius: 30px 0 30px 0;
+       border: 2px solid red;
+       padding: 10px;
+       
+   }
+       
+    .footer{
+        background-color: rgba(252, 254, 254, 0.9);
+        width: 100%;
+        height: 5vh;
+    }
+    .footer div p{
+        text-align: center;
+        padding: 8px;
+    }
+    
+</style>
+<body>
+
+    <header class="header">
+        <div class="logo_invertis">
+          <img src="ilogo.png" alt="">
+          <div class="line"></div>
+          <div class="portal_name"><h2>Student Complaint Reporting Portal</h2></div>
+        </div>
+        <div class="login_btns">
+          <a href="www.google.com"><button value="Home">Home</button></a>
+          <a href="www.google.com"><button value="Home">User Login</button></a>
+          <a href="www.google.com"><button value="Home">Official Login</button></a>
+    
+        </div>
+       </header>
+<section>
+ <div class="main_container">
+    
+  <hr> <br><br> <br><br> <br><br> <br><br> <br><br>
+        <div class="row text-center">
+
+            <div class="col-md-4 col-sm-12 hero-feature">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h3>Chief-Proctor Login</h3>
+                        <p>
+                            <a href="Chief-Proctorlogin.php" class="btn btn-primary">Chief-Proctor Login</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12 hero-feature">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h3>Dean Login</h3>
+                        <p>
+                            <a href="Dean login.php" class="btn btn-primary">Dean  Login</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12 hero-feature">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h3>HOD Login</h3>
+                        <p>
+                            <a href="HODlogin.php" class="btn btn-primary">HOD Login</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+</div></section>
+<footer class="footer">
+    <div>
+      <p>Copyright@Student Complaint Reporting Portal: 2024</p>
+    </div>
+  </footer>
+ 
+</body>
+</html>

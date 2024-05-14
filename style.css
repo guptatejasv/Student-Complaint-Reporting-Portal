@@ -1,0 +1,371 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: rgb(80, 173, 210);
+  --header-color: rgb(248, 248, 248);
+}
+
+body {
+  background-color: var(--main-color);
+}
+
+/* Header styling---------------------- */
+.header {
+  background-color: var(--header-color);
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  /* box-shadow:0px 2px 5px black; */
+  border-bottom: 5px solid red;
+}
+.login_btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login_btns a {
+  text-decoration: none;
+  list-style: none;
+}
+.login_btns button {
+  padding: 8px 10px;
+  margin-left: 15px;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 2px solid var(--main-color);
+  background: none;
+  font-size: large;
+  color: rgb(50, 75, 76);
+  display: block;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.login_btns button:hover {
+  background-color: var(--main-color);
+
+  border-radius: 10px 0px 10px 0px;
+  color: white;
+}
+.login_btns button a:hover {
+  color: white;
+}
+header .line {
+  height: 55px;
+  width: 2px;
+  border: 1.5px solid rgba(51, 58, 58, 0.9);
+  margin: 0px 10px;
+}
+
+.logo_invertis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo_invertis img {
+  float: left;
+}
+.logo_invertis div {
+  float: right;
+}
+
+.portal_name {
+  font-size: 1.3em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(32, 128, 237);
+}
+
+.portal_name:hover {
+  color: var(--main-color);
+}
+/* header styling end */
+.main_container {
+  background: url(Img/mu_2.jpg);
+  background-position: center;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 82vh;
+  padding-top: 100px;
+}
+
+.sub_container {
+  text-align: left;
+  justify-content: left;
+  width: 60%;
+  margin: auto;
+  margin-left: 50px;
+  border-radius: 30px 0 30px 0;
+  border: 2px solid rgb(248, 0, 0);
+  padding: 10px;
+  user-select: none;
+  /* transform: rotate(180deg); */
+
+  /* background-color: rgb(184, 188, 192); */
+}
+
+.main_heading {
+  font-size: 2.5rem;
+  font-weight: 1000;
+  color: rgb(255, 0, 0);
+
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+.sub_heading {
+  color: antiquewhite;
+  font-size: 1.15rem;
+  text-align: center;
+}
+.registration {
+  text-align: center;
+}
+.register_heading {
+  font-size: 1.5rem;
+  margin-top: 50px;
+  color: white;
+  user-select: none;
+}
+.register_btn a button {
+  width: auto;
+  font-size: 25px;
+  padding: 8px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* footer styling----------------------- */
+.footer {
+  background-color: rgba(252, 254, 254, 0.9);
+  width: 100%;
+  height: 5.5vh;
+}
+.footer div p {
+  text-align: center;
+  padding: 8px;
+}
+/* footer styling end-------------------- */
+@media screen and (max-width: 720px) {
+  .portal_name {
+    font-size: 1rem;
+  }
+  .logo_invertis img {
+    justify-content: center;
+    align-items: center;
+  }
+  .main_container {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+  .header {
+    display: block;
+  }
+  .sub_container .main_heading {
+    font-size: 1.5em;
+  }
+  .register_heading {
+    font-size: 1em;
+  }
+  .register_btn a button {
+    font-size: 1.25em;
+  }
+}
+
+/* Registration.php styling--------------------------------------- */
+.r_main_container {
+  background: url(Img/bg2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 0px;
+}
+
+.r_sub_container {
+  max-width: calc(100%-100px);
+  margin: -20px 50px;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  height: auto;
+  min-height: fit-content;
+}
+.r_reg_heading h2 {
+  font-size: 25px;
+  font-weight: 500;
+  /* position: relative; */
+
+  color: red;
+}
+
+form .r_std_details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+form .r_std_details .input-box {
+  width: calc(100% / 2 - 20px);
+}
+.r_std_details .input-box input {
+  padding-left: 5px;
+  font-size: 15px;
+}
+.r_std_details .input-box input,
+select {
+  height: 45px;
+  width: 100%;
+}
+.r_std_details .input-box label {
+  display: inline-block;
+  margin: 10px 0px;
+  font-weight: 500;
+}
+
+form .r_button {
+  height: 45px;
+  margin-top: 40px;
+}
+form .r_button input {
+  height: 100%;
+  width: 100%;
+  font-size: 14px;
+}
+/* Official login styling */
+.off_main_container {
+  width: 100%;
+  min-height: 80vh;
+  background-image: url(Img/bg1.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 50px 0px;
+}
+.off_sub_container {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  margin-top: 4.5rem;
+  position: fixed;
+}
+.off_boxes {
+  width: 300px;
+  background-color: white;
+  padding: 10px 30px;
+  margin: 2em;
+  border-radius: 2px;
+  box-shadow: 10px 10px 30px black;
+}
+
+.off_designation {
+  font-size: 1.75rem;
+  align-items: center;
+}
+.identity {
+  align-items: center;
+  font-weight: 500;
+  text-align: center;
+  padding: 10px 20px;
+}
+.off_log_btn button {
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin-top: 5px;
+  border-radius: 2px;
+  border: none;
+  border-bottom: 2px solid var(--main-color);
+  background: none;
+  color: rgb(50, 75, 76);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.off_log_btn button:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+.off_line {
+  margin-top: 5px;
+}
+
+/* user Login Page styling */
+.log_main_cantainer {
+  width: 100%;
+  min-height: 80vh;
+  background-image: url(Img/bg2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.log_log_form {
+  background-color: white;
+  padding: 30px 20px;
+  width: 30%;
+  text-align: center;
+  box-shadow: 2px 2px 5px black;
+}
+
+.log_form input {
+  width: 100%;
+  height: 2rem;
+  margin-top: 20px;
+  padding: 10px;
+}
+.log_form input:focus {
+  border: none;
+  border: 2px solid rgb(80, 173, 210);
+  outline: none;
+}
+.log_sub_btn input {
+  background-color: rgb(80, 173, 210);
+  outline: none;
+  border: none;
+  color: white;
+  font-size: large;
+}
+.log_sub_btn input:hover {
+  background-color: rgb(51, 126, 156);
+}
+.log_heading {
+  margin-bottom: 20px;
+  color: rgb(51, 126, 156);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.15rem;
+}
+.contact_btn div button {
+  background-color: rgb(255, 255, 255);
+  display: inline;
+  position: fixed;
+  bottom: 30px;
+  right: 0px;
+  margin-right: 20px;
+  padding: 10px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px black;
+}
+.contact_btn div button i {
+  font-size: larger;
+}

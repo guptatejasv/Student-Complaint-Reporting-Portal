@@ -1,0 +1,139 @@
+.chiefdash_main_container, .deandash_main_container, .hoddash_main_container{
+    background: url(Img/bg1.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px 20px;
+
+}
+.chiefdash_sub_container{
+    background-color: white;
+    padding: 20px;
+}
+.chiefdash_sub_container table{
+    width: 100%;
+    border-collapse: collapse;
+    font-family:'Open Sans', sans-serif;
+}
+
+.chiefdash_sub_container table, th, td{
+    border:1px solid black;
+}
+.chiefdash_sub_container table thead{
+    background-color: rgb(180, 9, 0);
+    color: white;
+}
+.chiefdash_sub_container table tbody td{
+    text-align: center;
+    font-size:medium;
+    padding: 4px 10px;
+}
+.chiefdash_sub_container table tbody tr:hover{
+    background-color: #c0c0c0;
+}
+.heading_table_up{
+    text-align: center;
+    padding-bottom: 5px;
+    color:darkblue;
+}
+.comp_action_main_container{
+    background: url(Img/bg1.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px 20px;
+
+}
+.comp_action_sub_container{
+    background-color: white;
+    padding: 20px;
+    padding-top: 10px;
+}
+.comp_action_logo_detail{
+ display: flex;
+ justify-content: space-between;
+ align-items:center;
+}
+.comp_action_logo img{
+    width: 120px;
+    height: 50px;
+}
+.comp_action_add{
+    font-size: 1.15rem;
+    font-family: Arial;
+  
+}
+.comp_action_std_detail{
+    width:70%;
+    /* background-color:red; */
+}
+.comp_action_std_photo{
+    width:30%;
+    /* background-color:blue; */
+    height:auto;
+}
+table{
+    border: 0px solid black;
+}
+.comp_action_logo_detail1{
+ display: flex;
+ justify-content: space-between;
+ margin:10px 0px;
+
+}
+.form_div{
+    display:flex;
+    justify-content:space-around;
+}
+.form_div div{
+    width:50%;
+}
+.form_div div input{
+    width:90%;
+    height:35px;
+    margin-left:30px;
+    margin-bottom:10px;
+    font-size:1rem;
+    font-family: Arial;
+    padding-left:4px;
+    
+}
+.form_div div label{
+    margin-left:30px;
+    font-family: Arial;
+
+}
+
+.comp_action_std_photo img{
+    width: 150px;
+    height:150px;
+    margin-left:50px;
+    margin-top:20px;
+}
+.comp_action_cmptable table{
+    width: 100%;
+    border-collapse: collapse;
+    font-family:'Open Sans', sans-serif;
+}
+.comp_action_cmptable table, th, td{
+    border:1px solid black;
+ 
+    
+}
+.comp_action_cmptable table thead{
+  
+    background-color: rgb(13,98,140);
+    color: white;
+}
+.comp_action_cmptable table tbody td{
+    text-align: center;
+    font-size:medium;
+    padding: 4px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}

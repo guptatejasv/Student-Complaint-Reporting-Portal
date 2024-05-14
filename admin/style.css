@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:root{
+    --main-color: rgb(80, 173, 210);
+    --header-color:  rgb(248, 248, 248);
+}
+.root{
+    height: 100vh;
+}
+body{
+  background-color: var(--main-color);
+}
+
+.header{
+    background-color: var(--header-color);
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    border-bottom: 5px solid red;
+ 
+}
+.login_btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login_btns a{
+    text-decoration: none;
+    list-style: none;
+    
+   
+}
+.login_btns button{
+    padding: 8px 10px;
+    margin-left: 15px;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 2px solid var(--main-color);
+    background:none;
+    font-size: large;
+    color: rgb(50, 75, 76);
+    display: block;
+    cursor: pointer;
+    transition: all .5s;
+}
+.login_btns button:hover{
+    background-color:  var(--main-color);
+
+   
+    border-radius: 10px 0px 10px 0px;
+    color: white;
+}
+.login_btns button a:hover{
+    color: white;
+}
+header .line{
+    height: 55px;
+    width: 2px;
+    border: 1.5px solid rgba(51, 58, 58, 0.9);
+    margin: 0px 10px;
+    }
+
+.logo_invertis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo_invertis img{
+    float: left;
+}
+.logo_invertis div{
+    float: right;
+}
+
+.portal_name{
+    font-size: 1.3em; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(32, 128, 237);
+}
+
+.portal_name:hover{
+    color:  var(--main-color);
+}
+
+.sd_std_img img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50% 50%;
+}
+.sd_std_logout_btn p a{
+    margin-left: 5px;
+    
+}
+.header2_dashboard_btn button{
+    border-color: rgb(32, 128, 237);
+    border-width: 1.2px;
+    border-radius: 2px;
+    
+}
+/* header2 styling---------------------- */
+
+.header2{
+    background-color: rgb(209, 234, 245);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    position: sticky;
+    top: 107.67px;
+    left: 0px;
+    box-shadow:0px 2px 5px black ;
+ 
+}
+.header2_dashboard_btn button{
+    padding: 5px 10px;
+   
+}
+
+
+/* header2 styling ending--------------- */
+/* footer styling----------------------- */
+.footer{
+    background-color: rgba(252, 254, 254, 0.9);
+    width: 100%;
+    height: 5.5vh;   
+}
+.footer div p{
+    text-align: center;
+    padding: 8px;
+}
+/* footer styling end-------------------- */
+
+/* userdashboard.php styling----------------start */
+.studentdash_main_container{
+    width: 100%;
+    height: 100%;
+}
+.studentdash_sub_container1{
+    float: left;    
+    background-color: var(--header-color);
+    width: 25%;
+    height: 100%;
+    border-right: 1px solid black;
+ 
+}
+.studentdash_sub_container2{
+    float: left;
+    width: 75%;
+    height: 100%;
+    background: url(Img//bg2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+/* .studentdash_sub_container2 .studentdash_form_head{
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+} */
+.studentdash_comp_form{
+    padding: 20px;
+    width: 75%;
+    background-color: var(--header-color);
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 1px 2px 5px black;
+
+}
+.studentdash_comp_form form{
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    padding: 10px;
+}
+.studentdash_comp_form_head{
+   font-size: 1.5rem;
+}
+.studentdash_comp_form form .input-box{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+.studentdash_comp_form form .input-box input,select{
+    width: 47%;
+    height: 40px;
+    margin-top: 10px;
+    padding: 5px;
+    
+}
+.input-box textarea{
+    width: 96%;
+    margin-top: 10px;
+    padding: 5px;
+    resize: none;
+}
+.input-box button{
+    width: 96%;
+    height: 40px;
+    margin-top: 5px;
+}
+.studentdash_sub_container1{
+    padding: 20px;
+    font-size: large;
+}
+.studentdash_sub_container1 ul{
+    margin: 30px;
+}
+.studentdash_sub_container1 ul li{
+    margin-top: 8px;
+}
+.studentdash_imp_link{
+    width: 100%;
+    height: 40px;
+    background-color:rgb(166, 198, 201);
+    color: rgb(12, 17, 52);
+    font-size: 1.5rem;
+    padding: 10px;
+}
+/* comp_action---------------------------- */
+.comp_action_logo_detail{
+ display: flex;
+ justify-content: space-between;
+}
+
+
